@@ -1,0 +1,17 @@
+# draw.io temp/backup files
+*.tmp-*
+*.drawio-bkp-*
+.xdp-*
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Python (you'll need this for your Flask project)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
