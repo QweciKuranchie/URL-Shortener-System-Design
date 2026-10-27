@@ -1,0 +1,110 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="xavKsrAQCrL0LkvW2wjA">
+    <mxGraphModel dx="1265" dy="753" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-4" edge="1" parent="1" source="iu0YN6a4uTBnkFfEBBXU-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="iu0YN6a4uTBnkFfEBBXU-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-1" parent="1" style="aspect=fixed;html=1;align=center;shadow=0;dashed=0;fillColor=#FF6A00;strokeColor=none;shape=mxgraph.alibaba_cloud.user;" value="" vertex="1">
+          <mxGeometry height="60" width="60" x="40" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;p class=&quot;text-secondary text-lg leading-7 mb-content-text&quot; id=&quot;7b13f57c-e222-4ec2-bb46-13f839f35836&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Flow for creating short URLs&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="60" width="190" x="290" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-6" edge="1" parent="1" source="iu0YN6a4uTBnkFfEBBXU-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="iu0YN6a4uTBnkFfEBBXU-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Python App&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;(app.py)&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="250" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-12" edge="1" parent="1" source="iu0YN6a4uTBnkFfEBBXU-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="iu0YN6a4uTBnkFfEBBXU-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-18" edge="1" parent="1" source="iu0YN6a4uTBnkFfEBBXU-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="iu0YN6a4uTBnkFfEBBXU-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-5" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#C925D1;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.rds_postgresql_instance;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="60" width="60" x="530" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Postgres Dtatbase&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="530" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;User&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="40" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Short URL&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="720" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Encodes ID into short code&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="80" x="730" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Returns ID&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="80" x="350" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="&lt;p class=&quot;text-secondary text-lg leading-7 mb-content-text&quot; id=&quot;a4db47d4-93f7-4f1a-9621-c3541d61880a&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;&lt;em style=&quot;&quot;&gt;Opening &lt;/em&gt;short URLs&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="60" width="190" x="295" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-25" edge="1" parent="1" source="iu0YN6a4uTBnkFfEBBXU-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.501;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="iu0YN6a4uTBnkFfEBBXU-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-22" parent="1" style="aspect=fixed;html=1;align=center;shadow=0;dashed=0;fillColor=#FF6A00;strokeColor=none;shape=mxgraph.alibaba_cloud.user;" value="" vertex="1">
+          <mxGeometry height="60" width="60" x="30" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;User&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="30" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-28" edge="1" parent="1" source="iu0YN6a4uTBnkFfEBBXU-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="iu0YN6a4uTBnkFfEBBXU-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Python App&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;(app.py)&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="220" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Opens Short URL&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="80" x="110" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-33" edge="1" parent="1" source="iu0YN6a4uTBnkFfEBBXU-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="iu0YN6a4uTBnkFfEBBXU-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-27" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;In Redis Cache&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="100" x="470" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-34" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;">
+          <mxGeometry relative="1" x="0.646" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="620" />
+              <mxPoint x="960" y="836" />
+            </Array>
+            <mxPoint x="798" y="620" as="sourcePoint" />
+            <mxPoint x="750" y="836.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-30" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#C925D1;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.rds_postgresql_instance;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="68" width="68" x="730" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-31" edge="1" parent="1" source="iu0YN6a4uTBnkFfEBBXU-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.052;entryY=0.428;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;" target="iu0YN6a4uTBnkFfEBBXU-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Destination&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="630" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Yes&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="460" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#FF0000);" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;No&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="600" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="iu0YN6a4uTBnkFfEBBXU-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Returns Long URL&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="820" y="580" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
