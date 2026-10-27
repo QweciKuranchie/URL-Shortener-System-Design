@@ -12,6 +12,7 @@ app = Flask(__name__)
 
 # Define the 62 characters used for short codes (0-9, a-z, A-Z)
 ALPHABET = string.digits + string.ascii_lowercase + string.ascii_uppercase
+ALPHABET_INDEX = {char: i for i, char in enumerate(ALPHABET)}
 
 # Connect to Redis for fast lookups
 cache = redis.Redis(
@@ -45,8 +46,14 @@ def base62_decode(code):
     """Convert a short code back into the original database ID."""
     num = 0
     for char in code:
-        num = num * 62 + ALPHABET.index(char)
+        if char not in ALPHABET_INDEX:
+            raise ValueError("invalid short code")
+        num = num * 62 + ALPHABET_INDEX[char]
     return num
+
+
+def is_valid_short_code(code):
+    return bool(code) and all(char in ALPHABET_INDEX for char in code)
 
 
 @app.route("/shorten", methods=["POST"])
@@ -74,3 +81,59 @@ def shorten_url():
     cache.set(short_code, long_url)
 
     return jsonify({"short_url": f"{os.environ['BASE_URL']}/{short_code}", "short_code": short_code}), 201
+
+
+@app.route("/")
+def index():
+    return jsonify({"service": "url-shortener", "health": "/health", "shorten": "POST /shorten"}), 200
+
+
+@app.route("/favicon.ico")
+def favicon():
+    return "", 204
+
+
+@app.route("/health")
+def health():
+    try:
+        cache.ping()
+        conn = get_db()
+        conn.close()
+    except Exception:
+        return jsonify({"status": "unhealthy"}), 503
+    return jsonify({"status": "healthy"}), 200
+
+
+@app.route("/<short_code>")
+def redirect_url(short_code):
+    if not is_valid_short_code(short_code):
+        return jsonify({"error": "Short URL not found"}), 404
+
+    # Check the fast cache first
+    long_url = cache.get(short_code)
+
+    if long_url:
+        print("CACHE HIT", flush=True)
+        return redirect(long_url, code=302)
+
+    # Cache miss - fall back to the database
+    print("CACHE MISS - querying database", flush=True)
+    conn = get_db()
+    cur = conn.cursor()
+    cur.execute("SELECT long_url FROM urls WHERE id = %s", (base62_decode(short_code),))
+    result = cur.fetchone()
+    cur.close()
+    conn.close()
+
+    if not result:
+        return jsonify({"error": "Short URL not found"}), 404
+
+    # Found it in the database - cache it for next time
+    long_url = result[0]
+    cache.set(short_code, long_url)
+
+    return redirect(long_url, code=302)
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
